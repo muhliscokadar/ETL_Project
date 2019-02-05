@@ -30,17 +30,19 @@ We prepared data to analyze average temperature with foodborne outbreaks across 
 
 ## **L**oad
 
-* Created a connection to database using MySQL.
+* We chose to load the data into MySQL database because it is easier to complicated operations like filter, join, groupby etc.  compared to MongoDB
 
 * Created schema in MySQL Workbench for the database and tables to be loaded. 
 
-* Created a config file to store information like user name, password, port name etc. to connect to database.
+* Created a config file to store information like user name, password, port name etc. to import in notebook to connect to database.
+
+* Used SQLAlchemy to connect to the database from notebook.
 
 * Checked for a successful connection to the database and confirm that the tables have been created.
 
 * Uploaded Dataframes to MySQL tables.
 
-* Created a SQL query to check all rows of tables loaded succesfully. 
+* Ran SQL queries in MySQL Workbench to check all rows of both tables loaded succesfully. 
 
-* Also created a query to join tables on yearmonth and state and show : Average Temperature, Total number of illnesses, hospitalizations and deaths by states and months.
+* Also created a query to join tables on yearmonth and state columns to display : Average Temperature, Total number of illnesses, hospitalizations and deaths by states and months.
 
