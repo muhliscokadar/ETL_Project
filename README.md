@@ -6,9 +6,6 @@ We prepared data to analyze average temperature with foodborne outbreaks across 
 
 ## **E**xtract
 
-
-## Data 
-
 * We used two diferent datasets from [data.world](https://data.world/) and [Kaggle](https://www.kaggle.com/).
 
 * One of the dataset was US foodborne outbreak database between 1998 to 2015 from United States Department of Agriculture. 
@@ -19,10 +16,8 @@ We prepared data to analyze average temperature with foodborne outbreaks across 
 
 * We imported each CSV into pandas DataFrames.
 
+
 ## **T**ransform
-
-
-## Data Cleanup & Analysis
 
 * Used python libraries : pandas, numpy, datetime etc. to clean up raw data.
 
@@ -31,8 +26,6 @@ We prepared data to analyze average temperature with foodborne outbreaks across 
 * Copied only the columns needed into a new DataFrame.
 
 * Filtered data to include years 2007 to 2013 for US states only. 
-
-
 
 
 ## **L**oad
@@ -49,5 +42,5 @@ We prepared data to analyze average temperature with foodborne outbreaks across 
 
 * Created a SQL query to check all rows of tables loaded succesfully. 
 
-* Also created a query to join tables on yearmonth and state and show : Average Temperature and Total number of illnesses, hospitalizations and deaths by states and months.
+* Also created a query to join tables on yearmonth and state and show : Average Temperature, Total number of illnesses, hospitalizations and deaths by states and months.
 
