@@ -1,5 +1,8 @@
 # ETL_Project
 
+Team: Wini, Muhlis, DG and Bharath
+
+
 We prepared data to analyze average temperature with foodborne outbreaks across US. 
 
 
@@ -30,7 +33,7 @@ We prepared data to analyze average temperature with foodborne outbreaks across 
 
 ## **L**oad
 
-* We chose to load the data into MySQL database because it is easier to complicated operations like filter, join, groupby etc.  compared to MongoDB
+* We chose to load the data into MySQL database because it is easier to do complicated operations like filter, join, groupby etc.  compared to MongoDB
 
 * Created schema in MySQL Workbench for the database and tables to be loaded. 
 
