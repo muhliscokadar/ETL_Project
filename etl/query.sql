@@ -12,7 +12,7 @@ SELECT
     SUM(IFNULL(food_data.illnesses, 0)) AS total_illnesses,
     SUM(IFNULL(food_data.hospitalizations, 0)) AS total_hospitalizations,
     SUM(IFNULL(food_data.deaths, 0)) AS total_deaths,
-    temperature.average_temp
+    ANY_VALUE(temperature.average_temp) AS avg_temp
 FROM
     food_data
         INNER JOIN
