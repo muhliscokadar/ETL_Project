@@ -1,6 +1,6 @@
 # ETL_Project
 
-We analysed average temperature related to foodborne outbreaks accross US. 
+We prepared data to analyze average temperature with foodborne outbreaks across US. 
 
 
 
@@ -9,28 +9,28 @@ We analysed average temperature related to foodborne outbreaks accross US.
 
 ## Data 
 
-* We used two diferent dataset from [data.world](https://data.world/) and [Kaggle](https://www.kaggle.com/).
+* We used two diferent datasets from [data.world](https://data.world/) and [Kaggle](https://www.kaggle.com/).
 
 * One of the dataset was US foodborne outbreak database between 1998 to 2015 from United States Department of Agriculture. 
 
-* Other dataset was historical weather data since 1750, that included average temperatures for each month by state and country accross the world.  
+* Other dataset was historical monthly average temperature data from 1750 to 2013, for all states and countries across the world.  
 
 * Both of our sources were flat files (CSV).
 
-* We put each CSV into a pandas DataFrame.
+* We imported each CSV into pandas DataFrames.
 
 ## **T**ransform
 
 
 ## Data Cleanup & Analysis
 
-* Used pyhton libraries called pandas, numpy, datetime etc. to clean up raw data.
+* Used python libraries : pandas, numpy, datetime etc. to clean up raw data.
 
 * Dropped some unrelated columns from our raw data. 
 
 * Copied only the columns needed into a new DataFrame.
 
-* Filtered data to include years 2007 to 2013 for US. 
+* Filtered data to include years 2007 to 2013 for US states only. 
 
 
 
@@ -39,12 +39,15 @@ We analysed average temperature related to foodborne outbreaks accross US.
 
 * Created a connection to database using MySQL.
 
+* Created schema in MySQL Workbench for the database and tables to be loaded. 
+
 * Created a config file to store information like user name, password, port name etc. to connect to database.
 
 * Checked for a successful connection to the database and confirm that the tables have been created.
 
-* Created schema in MySQL Workbench for the data to be loaded. 
+* Uploaded Dataframes to MySQL tables.
 
-* Made a query to check succesfully loaded. 
+* Created a SQL query to check all rows of tables loaded succesfully. 
 
-* Join tables on yearmonth and state. Sum up the number of illnesses, hospitalizations and deaths by states monthly and showed average temperatues for every single foodborne outbreak. 
+* Also created a query to join tables on yearmonth and state and show : Average Temperature and Total number of illnesses, hospitalizations and deaths by states and months.
+
